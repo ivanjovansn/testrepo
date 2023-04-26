@@ -1,0 +1,23 @@
+[
+  {
+    "id": null,
+    "name": "Test Event 1",
+    "description": "Description of Test Event 1",
+    "heldOn": "2023-04-25",
+    "status": "AVAILABLE"
+  },
+  {
+    "id": null,
+    "name": "Test Event 2",
+    "description": "Description of Test Event 2",
+    "heldOn": "2023-04-26",
+    "status": "CANCELLED"
+  },
+  {
+    "id": null,
+    "name": "Test Event 3",
+    "description": "Description of Test Event 3",
+    "heldOn": "2023-04-27",
+    "status": "CANCELLED"
+  }
+]

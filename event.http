@@ -1,0 +1,56 @@
+### Find all events
+GET http://localhost:8080/api/event
+
+### Get event by id
+GET http://localhost:8080/api/event/{{id}}}
+
+### Create new event
+POST http://localhost:8080/api/event
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Test Event 2",
+  "description": "Description of Test Event 2",
+  "heldOn": "2023-04-25",
+  "status": "CANCELLED"
+}
+
+### Create new event without name
+POST http://localhost:8080/api/event
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "",
+  "description": "Description of Test Event 2",
+  "heldOn": "2023-04-25",
+  "status": "CANCELLED"
+}
+
+### Update existing event
+PUT http://localhost:8080/api/event/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "TEST EVENT 1",
+  "description": "DESCRIPTION TEST EVENT 1",
+  "heldOn": "2023-04-25",
+  "status": "SOLDOUT"
+}
+
+### Update existing event with invalid id
+PUT http://localhost:8080/api/event/999
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "TEST EVENT 1",
+  "description": "DESCRIPTION TEST EVENT 1",
+  "heldOn": "2023-04-25",
+  "status": "SOLDOUT"
+}
+
+### Delete existing event
+DELETE http://localhost:8080/api/event/2
